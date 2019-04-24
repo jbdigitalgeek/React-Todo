@@ -1,13 +1,14 @@
 import React from 'react';
+import { tsPropertySignature } from '@babel/types';
 
 const TodoForm = props => {
     return (
-        <form>
+        <form onSubmit = {props.handleAddTodo}>
             <input
-                onChange={props.handleTodoChange}
+                onChange={props.changeTodo}
                 type="text"
                 name="todo"
-                value={props.value}
+                value={props.newInput.task}
                 placeholder="Add Todo Here"
             />
             <button onClick={props.handleAddTodo}>Submit</button>
