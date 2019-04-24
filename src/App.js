@@ -1,5 +1,7 @@
 import React from 'react';
 
+import TodoForm from './components/TodoComponents/TodoForm';
+
 
 class App extends React.Component {
 
@@ -38,7 +40,13 @@ class App extends React.Component {
   
   render() {
     return (
-      <div></div>
+      <div>
+        <TodoForm
+          value={this.state.todo}
+          handleTodoChange={this.changeTodo}
+          handleAddTodo={this.addTodo}
+          />
+      </div>
     );
   }
 }
