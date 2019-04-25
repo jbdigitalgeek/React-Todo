@@ -60,6 +60,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
+        <div className="app-container">
         <div className="to-do-list">
         <TodoList
           handleToggleComplete={this.toggleTodoComplete}
@@ -73,6 +74,7 @@ class App extends React.Component {
           handleAddTodo={this.addTodo}
           handleClearTodos={this.clearCompleted}
           />
+          </div>
         </div>
       </div>
     );
