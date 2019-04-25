@@ -2,10 +2,11 @@
 // feel free to change this component.js into TodoList.js
 import React from "react";
 import Todo from "./Todo";
+import "./Todo.scss"
 
 const TodoList = props => {
   return (
-    <div>
+    <div className="todo-list">
       {props.todos.map(todo => {
           return <Todo handleToggleComplete={props.handleToggleComplete} key={todo.id} todo={todo} />;
       })}

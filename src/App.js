@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./App.scss";
 import TodoForm from "./components/TodoComponents/TodoForm";
 import TodoList from "./components/TodoComponents/TodoList";
 
@@ -59,17 +59,21 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
+        <div className="to-do-list">
         <TodoList
           handleToggleComplete={this.toggleTodoComplete}
           todos={this.state.todos}
         />
+        </div>
+        <div className="to-do-form">
         <TodoForm
           value={this.state.todo}
           handleTodoChange={this.changeTodo}
           handleAddTodo={this.addTodo}
           handleClearTodos={this.clearCompleted}
-        />
+          />
+        </div>
       </div>
     );
   }
