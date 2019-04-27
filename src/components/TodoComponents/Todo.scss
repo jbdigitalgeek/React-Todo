@@ -1,0 +1,18 @@
+.todo-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.todo-container {
+    margin: 0 auto;
+    padding: 5px;
+    border: 2px green solid;
+    background: black;
+    color: red;
+    font-size: 2rem;
+    font-weight: bolder;
+    width: 175px;
+    text-align: center;
+}

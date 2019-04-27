@@ -1,0 +1,29 @@
+
+
+
+.container {
+    padding: 25px;
+    height: 600px;
+    width: 400px;
+    margin: 0 auto;
+    background: lightgray;
+    font-family: cursive;
+
+}
+.app-container {
+    padding: 10px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.to-do-list{
+
+    background: whitesmoke;
+    height: auto;
+}
+.to-do-form {
+    padding: 25px;
+}
